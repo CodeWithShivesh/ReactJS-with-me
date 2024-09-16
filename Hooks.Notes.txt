@@ -1,0 +1,13 @@
+All major concepts: 
+ 
+parent to child connection: props
+child to parent : eventlistner
+
+Hooks: 1.useState()
+       2.useRef()
+       3.useContext()
+       4.useReducer()
+       5.useEffect()
+
+contextAPI : store for props at global level
+

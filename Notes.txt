@@ -1,0 +1,7 @@
+In this project I'm using useEffect hook. This hook is used for setting up the condition or event condition which is occur when the condintion tigger.
+
+E.g: useEffect(Event, condintion);
+it is taking 2 args 1.event - Which you want to occur on metting the condition.
+                    2.condition - which you want to met.
+useEffect - have one special function - in the event itself you can pass the method in the return. 
+scenario: when you are fecthing the data from API or somewhere from internet so when it takes time and meanwhile if the user wants to move somewhere else so the this fuction which is passes in the return cancel the request which send previously. 

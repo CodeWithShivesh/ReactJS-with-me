@@ -1,0 +1,13 @@
+We can create the React Projects with two types: 1 with Vite library
+2 without Vite library
+
+1: With Vite library - 
+                    Action:1.  npm create vite@latest  -- create the Projects
+                    Action:2.  Enter project name 
+                    Action:3.  Select library- React with  Js 
+                    Action:4.  npm install 
+                    Action:5.(optional) bootstarp install copy command for latest version from bootstarp 
+                    Action:6.(optional) reacticons install copy command from react icons (npm i react-icons)
+                    verify the step 5 and 6 in package.json check dependencies.
+                    Action:7. npm run dev -- run the project
+                    Action:8. npm install react-router-dom
