@@ -1,0 +1,19 @@
+props is just a name ... in the react when pass any arguments to any function then react return the arguments for the function in the form of obj and which is called here 'props'.
+
+Here we pass the  'foodItem={item}' as the arguments (in the attribute defining manner) from the Foods.jsx to item.jsx
+
+props are immutable (default me jaisa mila h waise hi rahega )
+We can write the destructure props like props = {foodItem} otherwise use props.foodItem everywhere in the program.
+
+
+The method 'handleBuyNow here this is the nothing but the behavior of child '
+But after commenting this all I added the 'handleBuyButton' in the parent and nowit is a behaviour of child so with the props above two thing are coming first one is foodItem and second one is 'handleBuyButton'
+
+
+Here we are using HOoks which methed name starting with 'use' that is hook like 'useState()' this return one array who has 2 elements first is for current state and second one is method for the edit current state value. hooks are baisically use for managing state.
+
+
+here we are using hooks without destructureing
+  let textStateArr = useState("Custom Food");
+  let textStateVal = textStateArr[0];
+  let setTextState = textStateArr[1];
