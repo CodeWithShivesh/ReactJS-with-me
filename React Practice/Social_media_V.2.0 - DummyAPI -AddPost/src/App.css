@@ -1,0 +1,30 @@
+.App-container{
+    display: flex;
+}
+
+.content{
+    width: 100%;
+}
+.post{
+    margin: 15px 20px;
+    
+}
+
+.cPost{
+    margin: 20px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.hashtag{
+    margin: 10px 5px;
+    padding: 2px;
+}
+
+.reaction{
+    margin: 10px 0px;
+}
+
+.spinner{
+    margin: 10% 0;
+}

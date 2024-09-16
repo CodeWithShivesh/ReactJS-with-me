@@ -1,0 +1,69 @@
+This is the projects space folder 
+
+In this project I'm using useReducer(), useReducer is nothing but the extension of useState. in useReducer it takes two values as parameter 1. Action method 2. Initial State and it returns two elements 1. array of initial state and 2. dispathch method.
+
+useReducer() follow one cycle:
+EVENT --> EVENTHANDLER --> DISPATCH/ACTIONOBJECT --> REDUCER -->STATEUPDATE
+^                                                                      |
+|                                                                      |
+|______________________________________________________________________|
+
+
+e.g: Define the useReducer():
+              const [currentState, dispatchMethod] = useReducer(reducerMethod, initialValue);
+
+Define the reducerMethod(): it must be pure fuction, so it don't effect any element and placed to outside the function or we can place this in another file also.
+it take ACTIONOBJECT/actionMethod and initialValue as parameter.
+
+            const todoItemReducer = (initialState, Action) => {
+              return any_thing;
+            }
+
+Define ACTIONOBJECT/actionMethod : in this methed  we have to create two elements 1. ACTIONOBJECT(in this we define type of method)  2. payload (payload is sometime object or whatever we can take that contains the element what is passesd in action method as parameter )
+and in the last add dispatchMethod with actionOject.
+SYNTAX: 
+            const actionMethod = (parameter1, parameter2) => {
+                const actionObject = {
+                  type: "ADD_ITEM",
+                  payload: {
+                    parameter1,
+                    parameter2,
+                  },
+                };
+                dispatchMethod(actionObject);
+              };
+
+
+
+
+
+In this project I am using Context API method with useContext() hook it is nothing but the store where we kept all the items which is needed for all the components, so after that we don't need to provide the props over through every components, who want to access the props they can access from store.
+
+
+
+Notes: In this Projects We I'm Using two Hooks Actually i'm replacing exsiting hook to new one hook.
+useState() --> useRef()
+
+
+Here we are using HOoks which methed name starting with 'use' that is hook like
+useState(): 'useState()' this return one array who has 2 elements first is for current state and second one is method for the edit current state value. hooks are baisically use for managing state.
+e.g: 
+here we are using hooks without destructureing
+  let textStateArr = useState("Initial Value");
+  let textStateVal = textStateArr[0];
+  let setTextState = textStateArr[1];
+
+here we are using hooks with destructureing
+
+let [textStateVal, setTextState] = useState("Initial Value");
+
+
+useRef(): It creats the reffrence of any value and strored in self and when you want you can access those value from useRef with current method. useRef don't need to repaint again the entire thing after changing the value as like useState.
+and you can pass the current value of useRef as the props.
+
+e.g: let myValue = useRef("initial value");
+     currValue = myValue.current.value;
+
+
+When react has lots of event to handle and your setTextState method needs to be change so you can use "Functional Updates" inseated of only spread operator. (the reason this that if you using only spread operator then and you value is depends upon any updated value so sometimes react gives you the last value inseated of updated one)
+
